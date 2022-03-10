@@ -10,8 +10,8 @@ router.get('/', productsCtrl.getProducts)
 
 router.get('/:productId', productsCtrl.getProductById)
 
-router.put('/', productsCtrl.updateProductById)
+router.put('/:productId', productsCtrl.updateProductById)
 
-router.delete('/', productsCtrl.deleteProductById)
+router.delete('/:productId', productsCtrl.deleteProductById)
 
 export default router;
